@@ -20,5 +20,3 @@ Route::put('/changeDigicode','SalleController@changeDigicode');
 
 // FO & BO
 Route::post('/settingLeague','LigueController@settingLeague');
-
-
