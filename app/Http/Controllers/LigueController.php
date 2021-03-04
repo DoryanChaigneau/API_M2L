@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class LigueController extends Controller
 {
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
     public function all(Request $request)
     {
         $league = Utils::isValidConnection($request);
