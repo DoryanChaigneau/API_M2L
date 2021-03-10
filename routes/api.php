@@ -9,6 +9,7 @@ Route::get('/allBookings/{ligueId}','ReservationController@allBookingsById');
 Route::post('/auth','LigueController@login');
 Route::post('/makeReservation','ReservationController@makeReservation');
 Route::post('/league','LigueController@getLeagueById');
+Route::post('/league/resa','ReservationController@allBookingsById');
 
 // Back Office
 Route::get('/currentBookingsList','ReservationController@getCurrentBookingsList');
