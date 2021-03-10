@@ -128,17 +128,20 @@ class LigueController extends Controller
     }
 
     /**
-     * @param $id
-     * @return \Illuminate\Http\JsonResponse
+     * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
     public function getLeagueById(Request $request)
     {
         $datas = $request->input();
-        $league = Ligue::where('id', $datas['id'])->get();
+        $league = Ligue::where('id', $datas['id'])->first();
+        $data_return = [
+            'libelle' => $league->libelle,
+        ];
         return response()->json([
             'resultCode' => 'OK',
             'statusCode' => '200',
-            'body' => $league
+            'body' => $data_return
         ]);
     }
 }
