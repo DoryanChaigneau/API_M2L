@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Reservation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ReservationController extends Controller
 {
@@ -46,7 +47,11 @@ class ReservationController extends Controller
      */
     public function allBookingsById(Request $request)
     {
-        $booking = Reservation::where('ligue_id', $request['ligueId'])->orderBy('date','DESC')->get();
+        $booking = Reservation::where('ligue_id', $request['ligueId'])
+                                ->join('salle','reservation.salle_id','=','salle.id')
+                                ->select('reservation.*','salle.libelle as libelle_salle',DB::raw('DATE_FORMAT(reservation.date, "%d/%m/%Y") as date_format'))
+                                ->orderBy('date','DESC')
+                                ->get();
         if(!is_null($booking)) {
             return response()->json([
                 'resultCode' => 'OK',
