@@ -9,6 +9,15 @@ use Illuminate\Support\Facades\DB;
 class ReservationController extends Controller
 {
     /**
+     * @group Réservations de salles
+     *
+     * Pour créer une salle il faut renseigner :
+     *
+     * - Une date
+     * - Une salle
+     * - Quelle salle est réservée
+     * - Par quelle ligue la salle est réservée
+     *
      * @param Request $request
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
@@ -43,6 +52,10 @@ class ReservationController extends Controller
     }
 
     /**
+     * @group Permet de récupérer les salles réservées
+     *
+     * En fonction de la ligue connectée via son id
+     *
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
     public function allBookingsById(Request $request)

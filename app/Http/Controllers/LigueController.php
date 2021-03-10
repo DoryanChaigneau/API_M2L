@@ -7,6 +7,10 @@ use App\Salle;
 use App\Utils;
 use Illuminate\Http\Request;
 
+/**
+ * Class LigueController
+ * @package App\Http\Controllers
+ */
 class LigueController extends Controller
 {
     /**
@@ -24,6 +28,10 @@ class LigueController extends Controller
     }
 
     /**
+     * @group Méthode pour se connecter
+     *
+     * Pour se connecter il faut un login et un mot de passe
+     *
      * @param Request $request
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
@@ -128,6 +136,10 @@ class LigueController extends Controller
     }
 
     /**
+     * @group Récupération de la ligue en fonction de l'id
+     *
+     * On récupère le libelle de la ligue
+     *
      * @param Request $request
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */

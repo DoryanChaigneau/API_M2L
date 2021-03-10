@@ -11,6 +11,8 @@ use Illuminate\Http\Request;
 class SalleController extends Controller
 {
     /**
+     * @group Récupération des salles
+     *
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      * Return all rooms
      */
