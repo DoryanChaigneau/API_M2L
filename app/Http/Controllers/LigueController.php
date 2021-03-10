@@ -16,11 +16,11 @@ class LigueController extends Controller
     public function all(Request $request)
     {
         $league = Utils::isValidConnection($request);
-        if(!is_null($league)){
+        if (!is_null($league)) {
             $users = Ligue::all();
-            return response($users,200);
+            return response($users, 200);
         }
-        return response('Vous n\'êtes pas autorisé à effectuer cette action',403);
+        return response('Vous n\'êtes pas autorisé à effectuer cette action', 403);
     }
 
     /**
@@ -31,8 +31,8 @@ class LigueController extends Controller
     {
         $datas = $request->input();
         $league = Ligue::where('login', $datas['login'])->first();
-        if(!is_null($league)) {
-            if(hash('SHA512', $datas['motDePasse']) === $league->motDePasse) {
+        if (!is_null($league)) {
+            if (hash('SHA512', $datas['motDePasse']) === $league->motDePasse) {
                 $data_return = [
                     'id' => $league->id,
                     'token' => $league->generate_api_token(),
@@ -67,7 +67,7 @@ class LigueController extends Controller
         $league->activation = $datas['activation'];
         $league->save();
 
-        if(!is_null($league)) {
+        if (!is_null($league)) {
             $data_return = [
                 'id ' => $league->id,
                 'login' => $league->handball,
@@ -94,18 +94,18 @@ class LigueController extends Controller
     {
         $datas = $request->input();
         $league = Ligue::where('login', $datas['login'])->first();
-        if(!is_null($league)) {
-          //  if (Ligue::where('activation',1)->first()) {
-                $data_return = [
-                    'login' => $league->login,
-                    'nbEmployes' => $league->nbEmployes,
-                    'nbMembres' => $league->nbMembres
-                ];
-                return response()->json([
-                    'resultCode' => 'OK',
-                    'statusCode' => '200',
-                    'body' => $data_return
-                ]);
+        if (!is_null($league)) {
+            //  if (Ligue::where('activation',1)->first()) {
+            $data_return = [
+                'login' => $league->login,
+                'nbEmployes' => $league->nbEmployes,
+                'nbMembres' => $league->nbMembres
+            ];
+            return response()->json([
+                'resultCode' => 'OK',
+                'statusCode' => '200',
+                'body' => $data_return
+            ]);
             //}
         }
         return response()->json([
@@ -126,5 +126,19 @@ class LigueController extends Controller
             'body' => $accounts
         ]);
     }
-}
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getLeagueById(Request $request)
+    {
+        $datas = $request->input();
+        $league = Ligue::where('id', $datas['id'])->get();
+        return response()->json([
+            'resultCode' => 'OK',
+            'statusCode' => '200',
+            'body' => $league
+        ]);
+    }
+}
