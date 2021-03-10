@@ -8,6 +8,7 @@ Route::get('/halls','SalleController@getHallsDetails');
 Route::get('/allBookings/{ligueId}','ReservationController@allBookingsById');
 Route::post('/auth','LigueController@login');
 Route::post('/makeReservation','ReservationController@makeReservation');
+Route::post('/league','LigueController@getLeagueById');
 
 // Back Office
 Route::get('/currentBookingsList','ReservationController@getCurrentBookingsList');
