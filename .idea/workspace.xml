@@ -12,7 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3faa968-d552-42c3-96ec-c0e87f4335f9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LigueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LigueController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +206,7 @@
       <workItem from="1615299965341" duration="1405000" />
       <workItem from="1615317774526" duration="310000" />
       <workItem from="1615320632325" duration="1451000" />
+      <workItem from="1615394334968" duration="640000" />
     </task>
     <task id="LOCAL-00001" summary="First API">
       <created>1609159568247</created>
@@ -242,6 +243,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First API" />
     <MESSAGE value="Second Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
+    <MESSAGE value="Ligue controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ligue controller" />
   </component>
 </project>
