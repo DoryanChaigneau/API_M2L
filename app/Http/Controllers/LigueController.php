@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
  */
 class LigueController extends Controller
 {
+
+    public function test()
+    {
+        return response('test',200);
+    }
+
     /**
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
