@@ -1,4 +1,4 @@
-<h1 style="color : red">Pour la mise en place de la bdd utiliser le fichier sql qui ce situe a la racine du projet API</h1>
+<h1 style="color: red">Pour la mise en place de la bdd utiliser le fichier sql qui ce situe a la racine du projet API</h1>
 
 
 
