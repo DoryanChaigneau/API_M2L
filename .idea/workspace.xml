@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3faa968-d552-42c3-96ec-c0e87f4335f9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/API_M2L.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/API_M2L.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LigueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LigueController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="d3faa968-d552-42c3-96ec-c0e87f4335f9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,6 +225,7 @@
       <workItem from="1615317774526" duration="310000" />
       <workItem from="1615320632325" duration="5607000" />
       <workItem from="1615443415783" duration="7582000" />
+      <workItem from="1615487244302" duration="52000" />
     </task>
     <task id="LOCAL-00001" summary="First API">
       <created>1609159568247</created>
@@ -276,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615406960020</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="FINAL">
+      <created>1615487285290</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615487285290</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +298,8 @@
     <MESSAGE value="First API" />
     <MESSAGE value="Second Commit" />
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="FINAL" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINAL" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2404" y="231" key="#CLI_Interpreters" timestamp="1615415718426">
